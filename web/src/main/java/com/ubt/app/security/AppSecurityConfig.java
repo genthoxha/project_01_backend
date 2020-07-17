@@ -59,8 +59,7 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(
                         "/drivers/**",
                         "/servers/**",
-                        "/vehicles",
-                        "/vehicles/vehicle-reports",
+                        "/vehicles/**",
                         "/orders/getAll",
                         "/driver-work-schedule",
                         "/drivers/driver-reports").authenticated()

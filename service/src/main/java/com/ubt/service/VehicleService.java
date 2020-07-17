@@ -19,13 +19,14 @@ public class VehicleService {
         return vehicleRepository.findAll();
     }
 
-    public Optional<Vehicle> getById(int id) {
+    public Vehicle getById(int id) {
         return vehicleRepository.findById(id);
     }
 
     public void deleteById(int id) {
         vehicleRepository.deleteById(id);
     }
+
 
 
     public void save(Vehicle vehicle) {
